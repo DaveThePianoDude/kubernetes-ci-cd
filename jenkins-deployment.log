@@ -1,0 +1,72 @@
+Running from: /usr/share/jenkins/jenkins.war
+webroot: EnvVars.masterEnvVars.get("JENKINS_HOME")
+May 07, 2020 3:49:55 PM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @507ms to org.eclipse.jetty.util.log.JavaUtilLog
+May 07, 2020 3:49:55 PM winstone.Logger logInternal
+INFO: Beginning extraction from war file
+May 07, 2020 3:49:56 PM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+May 07, 2020 3:49:56 PM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.z-SNAPSHOT; built: 2018-08-30T13:59:14.071Z; git: 27208684755d94a92186989f695db2d7b21ebc51; jvm 1.8.0_212-8u212-b01-1~deb9u1-b01
+May 07, 2020 3:49:57 PM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: node0 Scavenging every 600000ms
+Jenkins home directory: /var/jenkins_home found at: EnvVars.masterEnvVars.get("JENKINS_HOME")
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started w.@4da855dd{Jenkins v2.164.3,/,file:///var/jenkins_home/war/,AVAILABLE}{/var/jenkins_home/war}
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@61edc883{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+May 07, 2020 3:49:57 PM org.eclipse.jetty.server.Server doStart
+INFO: Started @3183ms
+May 07, 2020 3:49:57 PM winstone.Logger logInternal
+INFO: Winstone Servlet Engine v4.0 running: controlPort=disabled
+May 07, 2020 3:49:59 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+May 07, 2020 3:49:59 PM hudson.PluginManager loadDetachedPlugins
+INFO: Upgrading Jenkins. The last running version was 2.136. This Jenkins is version 2.164.3.
+May 07, 2020 3:49:59 PM hudson.PluginManager loadDetachedPlugins
+INFO: Upgraded Jenkins from version 2.136 to version 2.164.3. Loaded detached plugins (and dependencies): []
+May 07, 2020 3:49:59 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+May 07, 2020 3:50:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+May 07, 2020 3:50:05 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+May 07, 2020 3:50:05 PM hudson.model.UserIdMigrator migrateUsers
+INFO: Migrating user 'admin' from 'users/admin/' to 'users/admin_5556059201662282252/'
+May 07, 2020 3:50:07 PM hudson.ExtensionFinder$GuiceFinder$FaultTolerantScope$1 error
+INFO: Failed to instantiate optional component hudson.plugins.build_timeout.operations.AbortAndRestartOperation$DescriptorImpl; skipping
+May 07, 2020 3:50:07 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+AI: INFO 07-05-2020 15:50, 25: Configuration file has been successfully found as resource
+May 07, 2020 3:50:08 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+May 07, 2020 3:50:08 PM jenkins.util.groovy.GroovyHookScript execute
+INFO: Executing /var/jenkins_home/init.groovy.d/tcp-slave-agent-port.groovy
+May 07, 2020 3:50:08 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@da21ea6: display name [Root WebApplicationContext]; startup date [Thu May 07 15:50:08 UTC 2020]; root of context hierarchy
+May 07, 2020 3:50:08 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@da21ea6]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7886eaae
+May 07, 2020 3:50:09 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7886eaae: defining beans [authenticationManager]; root of factory hierarchy
+May 07, 2020 3:50:09 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Started Download metadata
+May 07, 2020 3:50:09 PM hudson.model.AsyncPeriodicWork$1 run
+INFO: Finished Download metadata. 12 ms
+May 07, 2020 3:50:09 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@32fb537a: display name [Root WebApplicationContext]; startup date [Thu May 07 15:50:09 UTC 2020]; root of context hierarchy
+May 07, 2020 3:50:09 PM org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+INFO: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@32fb537a]: org.springframework.beans.factory.support.DefaultListableBeanFactory@751811ee
+May 07, 2020 3:50:09 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@751811ee: defining beans [filter,legacy]; root of factory hierarchy
+May 07, 2020 3:50:09 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+May 07, 2020 3:50:09 PM hudson.WebAppMain$3 run
+INFO: Jenkins is fully up and running
+--> setting agent port for jnlp
+--> setting agent port for jnlp... done
