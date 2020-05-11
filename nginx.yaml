@@ -1,14 +1,83 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  creationTimestamp: "2020-05-08T14:09:36Z"
+  creationTimestamp: "2020-05-11T00:01:53Z"
   labels:
     run: nginx
+  managedFields:
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:run: {}
+      f:spec:
+        f:containers:
+          k:{"name":"nginx"}:
+            .: {}
+            f:image: {}
+            f:imagePullPolicy: {}
+            f:name: {}
+            f:ports:
+              .: {}
+              k:{"containerPort":80,"protocol":"TCP"}:
+                .: {}
+                f:containerPort: {}
+                f:protocol: {}
+            f:resources: {}
+            f:terminationMessagePath: {}
+            f:terminationMessagePolicy: {}
+        f:dnsPolicy: {}
+        f:enableServiceLinks: {}
+        f:restartPolicy: {}
+        f:schedulerName: {}
+        f:securityContext: {}
+        f:terminationGracePeriodSeconds: {}
+    manager: kubectl
+    operation: Update
+    time: "2020-05-11T00:01:53Z"
+  - apiVersion: v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:status:
+        f:conditions:
+          k:{"type":"ContainersReady"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Initialized"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+          k:{"type":"Ready"}:
+            .: {}
+            f:lastProbeTime: {}
+            f:lastTransitionTime: {}
+            f:status: {}
+            f:type: {}
+        f:containerStatuses: {}
+        f:hostIP: {}
+        f:phase: {}
+        f:podIP: {}
+        f:podIPs:
+          .: {}
+          k:{"ip":"172.17.0.7"}:
+            .: {}
+            f:ip: {}
+        f:startTime: {}
+    manager: kubelet
+    operation: Update
+    time: "2020-05-11T00:01:58Z"
   name: nginx
   namespace: default
-  resourceVersion: "575"
+  resourceVersion: "3644"
   selfLink: /api/v1/namespaces/default/pods/nginx
-  uid: 8cb2dd56-9135-11ea-8840-0800270e5bf2
+  uid: ae52c17a-e977-401d-bcc3-9e2f58affbfa
 spec:
   containers:
   - image: nginx
@@ -22,9 +91,10 @@ spec:
     terminationMessagePolicy: File
     volumeMounts:
     - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: default-token-2xzss
+      name: default-token-pggkw
       readOnly: true
   dnsPolicy: ClusterFirst
+  enableServiceLinks: true
   nodeName: minikube
   priority: 0
   restartPolicy: Always
@@ -43,41 +113,44 @@ spec:
     operator: Exists
     tolerationSeconds: 300
   volumes:
-  - name: default-token-2xzss
+  - name: default-token-pggkw
     secret:
       defaultMode: 420
-      secretName: default-token-2xzss
+      secretName: default-token-pggkw
 status:
   conditions:
   - lastProbeTime: null
-    lastTransitionTime: "2020-05-08T14:09:36Z"
+    lastTransitionTime: "2020-05-11T00:01:53Z"
     status: "True"
     type: Initialized
   - lastProbeTime: null
-    lastTransitionTime: "2020-05-08T14:09:42Z"
+    lastTransitionTime: "2020-05-11T00:01:58Z"
     status: "True"
     type: Ready
   - lastProbeTime: null
-    lastTransitionTime: null
+    lastTransitionTime: "2020-05-11T00:01:58Z"
     status: "True"
     type: ContainersReady
   - lastProbeTime: null
-    lastTransitionTime: "2020-05-08T14:09:36Z"
+    lastTransitionTime: "2020-05-11T00:01:53Z"
     status: "True"
     type: PodScheduled
   containerStatuses:
-  - containerID: docker://03e9ba43097bca0aa729926e639ad26a1c8e5f537624237ad5f9fed040c0bedb
+  - containerID: docker://6805cb0be47ab2e9436ce002f797b1f4a5d0a276f313b8d4518b615c899aa32b
     image: nginx:latest
     imageID: docker-pullable://nginx@sha256:86ae264c3f4acb99b2dee4d0098c40cb8c46dcf9e1148f05d3a51c4df6758c12
     lastState: {}
     name: nginx
     ready: true
     restartCount: 0
+    started: true
     state:
       running:
-        startedAt: "2020-05-08T14:09:42Z"
-  hostIP: 192.168.99.100
+        startedAt: "2020-05-11T00:01:57Z"
+  hostIP: 192.168.64.2
   phase: Running
-  podIP: 172.17.0.5
+  podIP: 172.17.0.7
+  podIPs:
+  - ip: 172.17.0.7
   qosClass: BestEffort
-  startTime: "2020-05-08T14:09:36Z"
+  startTime: "2020-05-11T00:01:53Z"
