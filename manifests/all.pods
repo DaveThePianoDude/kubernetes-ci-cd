@@ -1,0 +1,15 @@
+NAMESPACE     NAME                                        READY   STATUS    RESTARTS   AGE
+default       hello-kenzan-974796ffb-tkqfn                1/1     Running   0          2d
+default       jenkins-5566cc5fdc-x8wpf                    1/1     Running   0          6d
+default       nginx                                       1/1     Running   0          6d
+default       registry-86f4b5686b-5h6mf                   2/2     Running   0          6d
+default       web-77484d4b5d-whplg                        1/1     Running   0          6d
+kube-system   coredns-78fcdf6894-726d8                    1/1     Running   0          6d
+kube-system   coredns-78fcdf6894-s5wsw                    1/1     Running   0          6d
+kube-system   etcd-minikube                               1/1     Running   0          6d
+kube-system   kube-apiserver-minikube                     1/1     Running   0          2d
+kube-system   kube-controller-manager-minikube            1/1     Running   0          14m
+kube-system   kube-proxy-f5ckh                            1/1     Running   0          6d
+kube-system   kube-scheduler-minikube                     1/1     Running   0          6d
+kube-system   nginx-ingress-controller-5b56cdd59c-jj5bg   1/1     Running   1          6d
+kube-system   storage-provisioner                         1/1     Running   1          6d
